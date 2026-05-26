@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>تهنئة يوم عرفة</title>
+
+<meta property="og:title" content="تهنئة يوم عرفة 🤍" />
+<meta property="og:description" content="دعوة صادقة في يوم عرفة من أحمد يونس" />
+<meta property="og:image" content="ضع_رابط_الصورة_هنا" />
+<meta property="og:type" content="website" />
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.35), transparent 35%),
+    linear-gradient(135deg, #f7f2e8, #efe3cf, #d9c3a3);
+  color: #1c1c1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  padding: 34px 26px;
+  border-radius: 34px;
+  background: rgba(255,255,255,0.58);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow: 0 25px 70px rgba(0,0,0,0.18);
+  text-align: center;
+  animation: cardIn 1.1s ease both;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.65);
+  font-size: 13px;
+  color: #6b5b45;
+  margin-bottom: 22px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 18px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.line {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 0.8s ease forwards;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+}
+
+.line:nth-of-type(1) { animation-delay: .5s; }
+.line:nth-of-type(2) { animation-delay: 1s; }
+.line:nth-of-type(3) { animation-delay: 1.5s; }
+.line:nth-of-type(4) { animation-delay: 2s; }
+
+.dua {
+  margin: 26px 0;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.55);
+  font-size: 17px;
+  line-height: 2;
+  color: #3a2f22;
+  opacity: 0;
+  animation: fadeUp .9s ease forwards;
+  animation-delay: 2.6s;
+}
+
+.signature {
+  margin-top: 22px;
+  font-size: 17px;
+  color: #3f3529;
+  opacity: 0;
+  animation: fadeUp .9s ease forwards;
+  animation-delay: 3.2s;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+  opacity: 0;
+  animation: fadeUp .9s ease forwards;
+  animation-delay: 3.8s;
+}
+
+button {
+  flex: 1;
+  border: none;
+  border-radius: 18px;
+  padding: 14px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.share { background: #1c1c1e; color: white; }
+.copy { background: rgba(255,255,255,0.75); color: #1c1c1e; }
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: scale(.96) translateY(18px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="badge">٩ ذو الحجة • يوم عرفة 🤍</div>
+
+  <h1>تهنئة يوم عرفة</h1>
+
+  <p class="line">في هذا اليوم العظيم،</p>
+  <p class="line">حيث تُرفع الدعوات وتتنزّل الرحمات،</p>
+  <p class="line">أسأل الله أن يكتب لكم سكينة القلب،</p>
+  <p class="line">وبركة السعي، وطمأنينة الأيام القادمة.</p>
+
+  <div class="dua">
+    لا إله إلا الله وحده لا شريك له،<br>
+    له الملك وله الحمد،<br>
+    وهو على كل شيء قدير.
+  </div>
+
+  <div class="signature">
+    كل عام وأنتم بخير<br>
+    — أحمد يونس
+  </div>
+
+  <div class="actions">
+    <button class="share" onclick="shareWhatsApp()">مشاركة واتساب</button>
+    <button class="copy" onclick="copyLink()">نسخ الرابط</button>
+  </div>
+</div>
+
+<script>
+function shareWhatsApp() {
+  const text = "تهنئة يوم عرفة 🤍\nدعوة صادقة في يوم عرفة من أحمد يونس\n\n" + window.location.href;
+  window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
+}
+
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href).then(function() {
+    alert("تم نسخ الرابط");
+  }).catch(function() {
+    alert("انسخ الرابط من شريط المتصفح");
+  });
+}
+</script>
+
+</body>
+</html>
